@@ -1,0 +1,11 @@
+{
+    "python.venvFolders": [
+        "envs",
+        ".pyenv",
+        ".direnv",
+        ".venv"
+    ],
+    "python.venvPath": "${workspaceFolder}/.venv",
+    "python.pythonPath": ".venv/bin/python",
+    // "python.pythonPath": "${workspaceFolder}.venv/bin/python"
+}
