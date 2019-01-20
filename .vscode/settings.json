@@ -6,6 +6,7 @@
         ".venv"
     ],
     "python.venvPath": "${workspaceFolder}/.venv",
-    "python.pythonPath": ".venv/bin/python",
+    "python.pythonPath": "/home/nemsys/.pyenv/versions/3.7.0/bin/python",
+    "python.linting.pylintEnabled": false,
     // "python.pythonPath": "${workspaceFolder}.venv/bin/python"
 }
