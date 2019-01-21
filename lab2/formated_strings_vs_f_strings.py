@@ -2,7 +2,7 @@ user_name = "ada"
 user_age = 32
 
 
-# these two statements do equivalent job
+# next two statements do equivalent job
 print(f"Hello {user_name.capitalize()}. After ten years you'll be {user_age+10} years old.")
 
 
