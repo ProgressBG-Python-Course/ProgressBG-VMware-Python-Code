@@ -13,5 +13,16 @@
     // "python.autoComplete.preloadModules": ["numpy", "pandas", "matplotlib"],
     "python.autoComplete.addBrackets": true,
     "python.linting.pylintEnabled": true,
-    "python.pythonPath": ".venv/bin/python"
+    "python.pythonPath": ".venv/bin/python",
+    "spellright.language": [
+        "Bulgarian",
+        "English (American)"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "python",
+        "html"
+    ]
 }
