@@ -15,13 +15,13 @@
     "python.linting.pylintEnabled": true,
     "python.pythonPath": ".venv/bin/python",
     "spellright.language": [
-        "Bulgarian",
         "English (American)"
     ],
     "spellright.documentTypes": [
         "markdown",
         "latex",
         "plaintext",
-        "html"
+        "html",
+        "python"
     ]
 }
