@@ -7,7 +7,4 @@
 # print(f"x = {sl.x}")
 # print(f"y = {sl.y}")
 
-# TODO: show the example of problematic import 
-import math
-
-print(math.log10(10000))
+print("my math file")
