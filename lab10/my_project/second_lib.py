@@ -1,6 +1,3 @@
-import lib
-
-
 def Person():
     print('Person function')
 
