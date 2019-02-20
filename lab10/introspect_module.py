@@ -1,11 +1,18 @@
 import inspect
 
 
+# def foo():
+#     print()
+
+# def bar(f):
+#     print( f.__name__ )
+
+# bar(foo)
+
 def calling_stack_decorator(decorated):
     def wraper():
-        func_name = inspect.stack()[0][3]
-        caller_name = inspect.stack()[1][3]
-        print("I'm {}.\n{} called me!".format(func_name,caller_name))
+        print( inspect.stack()[0].__dir__() )
+
         decorated()
 
     return wraper
@@ -14,10 +21,5 @@ def calling_stack_decorator(decorated):
 def foo():
     pass
 
-def bar(f):
-  f()
-
-bar(foo)
-# I'm foo.
-# bar called m
+foo()
 

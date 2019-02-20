@@ -1,16 +1,25 @@
-import datetime
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-def get_weekday_name(date, lang):
-    named_wd = {
-        'bg':["понеделник", "вторник", "сряда", "четвъртък", "петък", "събота", "неделя"],
-        'en':["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-    }
-    
+    def greet(self):
+        print(f'My name is {self.name}. {self.age} years old.')
 
 
-    wd_name = named_wd[lang][date.weekday()]
-    return wd_name
 
-now = datetime.datetime.now()
+class Employee(Person):
+    def _init__(self, name, age, cv):
+        super().__init__(name, age)
+        self.cv = cv
 
-print('Today is', get_weekday_name(now, "bg"))
+
+pesho = Employee("Pesho", 32, "CV")
+
+# if pesho is a Person, then execute pesho.gree()
+ 
+
+if issubclass(type(pesho), Person):
+    pesho.greet()
+
+
