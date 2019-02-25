@@ -1,3 +1,4 @@
-from libA import lib
+# DONE_TODO: show the example of problematic import  - just as is...
+import math
 
-lib.greet()
+print(math.log10(10000))
