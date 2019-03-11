@@ -1,0 +1,6 @@
+<!-- {"apples": 2.5, "oranges": 1.9, "bananas": 2.4} -->
+<data>
+  <product key="apples">2.5</product>
+  <product key="oranges">1.9</product>
+  <product key="bananas">2.4</product>
+</data>
