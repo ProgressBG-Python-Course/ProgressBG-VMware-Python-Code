@@ -25,7 +25,7 @@ def convert_to_window1251(string, file_name):
 
 
 
-convert_to_window1251("з", 'win1251.txt')
+convert_to_window1251("здравейте", 'win1251.txt')
 
 
 # TASK: read the text in "win1251.txt" and print it with uppercase letter using the print(str.upper())
@@ -34,10 +34,9 @@ convert_to_window1251("з", 'win1251.txt')
 
 # TODO: why prints '\xe7'
 def upper_win1251(file_name):
-  with open(file_name, mode="rb") as fh:
+  with open(file_name, mode="r") as fh:
     bytes = fh.read()
-    # 0417
-    print(bytes)
+    print( bytes.decode(encoding="cp1251").upper())
 
 upper_win1251('win1251.txt')
 
