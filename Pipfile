@@ -8,6 +8,11 @@ bpython = "*"
 
 [packages]
 numpy = "*"
+ipython = "*"
+jupyter = "*"
+aiohttp = "*"
+matplotlib = "*"
+jupyterlab = "*"
 
 [requires]
 python_version = "3.7"
