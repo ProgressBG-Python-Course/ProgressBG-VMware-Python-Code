@@ -1,0 +1,3 @@
+Scraping URL: https://laptop.bg/laptops-lenovo?page=1
+name: Lenovo IdeaPad 330
+<span class="price">1399<span class="currency">лв.</span></span>
