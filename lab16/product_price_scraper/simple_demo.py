@@ -17,24 +17,18 @@ def get_html(url):
 		  return f.read()
 
 def scrape_data(page):
-	bs_parser = BeautifulSoup(page, 'html.parser')	
-
+	bs_parser = BeautifulSoup(page, 'html.parser')
 	products_list = bs_parser.find('ul', class_='products')
 
-	for product in products_list.find_all("li"):	
-			try:				
-				tmp = product.select("a h2")	
-				name = tmp[0].string
-				price_str = str(product.find('span', class_='price'))			
-				# <span class="price">659<span class="currency">лв.</span></span>
-				res = re.search(r'<span class="price">(\d+)', price_str)
-				price = res.groups()[0]
-				
-			except:
-				continue
+	for product in products_list.find_all("li"):			
+		try:
+			name = product.select("a h2")[0].string
+			price_str = str(product.select("span.price")[0])
+			price = re.findall(r'class="price">(\d+)', price_str)[0]
+		except:
+			continue			
 
-	
-	products.append((name,int(price)))
+		products.append((name,int(price)))
 
 def print_scraped_data(products):
 	sorted_by_price = sorted(products, key=lambda p: p[1])

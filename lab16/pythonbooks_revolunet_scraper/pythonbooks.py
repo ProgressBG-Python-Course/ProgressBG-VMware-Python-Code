@@ -22,6 +22,8 @@ def get_html(url):
 	
 
 if __name__ == '__main__':	
+	# using the 'https://pythonbooks.revolunet.com/' URL will return us the HTML, which is rendered by JavaScript on client-side. And that will make the scraper very difficult.
+	# So, it is better to find the RestAPI/JSON file:
 	url = "https://raw.githubusercontent.com/revolunet/PythonBooks/master/issues.json"	
 
 	page_content = get_html(url)
